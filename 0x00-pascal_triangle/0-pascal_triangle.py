@@ -13,11 +13,11 @@ def pascal_triangle(n):
 
     triangle = []
     for i in range(n):
-        line = []
+        row = []
         for j in range(i + 1):
             if j == 0 or j == i:
-                line.append(1)
+                row.append(1)
             elif i > 0 and j > 0:
-                line.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
-        triangle.append(line)
+                row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
+        triangle.append(row)
     return triangle
