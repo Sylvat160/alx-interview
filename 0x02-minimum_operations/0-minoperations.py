@@ -23,7 +23,8 @@ def minOperations(n):
             clipboard = current_H_count
             current_H_count += clipboard
             operations_count += 2
-        elif n - current_H_count > 0 and (n - current_H_count) % current_H_count == 0:
+        elif n - current_H_count > 0 and \
+        (n - current_H_count) % current_H_count == 0:
             # Copy all and paste
             clipboard = current_H_count
             current_H_count += clipboard
